@@ -5,3 +5,6 @@
 
 ##Branch Intent
 -Utilisation de l'intent
+
+##Branch Parcelable
+-Utilisation de la méthode parcelavle
