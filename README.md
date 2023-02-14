@@ -11,3 +11,6 @@
 
 ##Branch Dimension
 -Utilisation des dimensions dans les btn
+
+##Branch Layout
+Utilisation du linear et relative layout
