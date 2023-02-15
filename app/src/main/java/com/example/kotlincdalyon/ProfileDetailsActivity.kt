@@ -17,5 +17,8 @@ class ProfileDetailsActivity : AppCompatActivity() {
 
         nameTextView.setText("NOM : ${profile?.name}")
         ageTextView.setText("AGE: ${profile?.age}")
+
+
+        //Dialog Button
     }
 }

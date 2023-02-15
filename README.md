@@ -14,3 +14,6 @@
 
 ##Branch Layout
 Utilisation du linear et relative layout
+
+##Branch Dialog
+utilisation des dialog
