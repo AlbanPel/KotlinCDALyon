@@ -3,6 +3,7 @@ package com.example.kotlincdalyon
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class ProfileDetailsActivity : AppCompatActivity() {
@@ -19,6 +20,20 @@ class ProfileDetailsActivity : AppCompatActivity() {
         ageTextView.setText("AGE: ${profile?.age}")
 
 
-        //Dialog Button
+        //Create dialog button
+        findViewById<Button>(R.id.show_dialog_button).setOnClickListener {
+            val fragment = ConfirmationDeleteDialogFragment()
+            fragment.listener = object: ConfirmationDeleteDialogFragment.ConfirmationDeleteListener{
+
+                override fun onDialogPosistiveClick() {
+                    val fragment = FileListDialogFragment()
+                    fragment.show(supportFragmentManager, "FileListDialogFragment")
+                }
+
+                override fun onDialogNegativeClick() {}
+            }
+            //afficher le dialog
+            fragment.show(supportFragmentManager, "FileListDialogFragment")
+        }
     }
 }
